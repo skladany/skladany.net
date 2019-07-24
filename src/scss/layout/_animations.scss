@@ -1,0 +1,87 @@
+/* Transitions
+================ */
+
+header, header .logo, h1, main, .logo svg, .logo svg path, .logo svg circle, span.home, .single-project aside {
+  @include transition(all 1s ease-in-out);
+}
+
+figure img, figure figcaption {
+  @include transition(all .25s ease-in-out);
+}
+
+div.about {
+  @include transition(all .5s ease-in-out);
+}
+
+article {
+  @include transition(all .75s ease-in-out);
+}
+
+// h1 {
+//  @include transition(all 1s ease-in-out);
+// }
+
+
+
+/* Animations 
+================ */
+
+@include keyframes(logoLoad) {
+    from {
+      opacity: 0; 
+    }
+  	25% {
+      opacity: 0; 
+  	  @include transform(scale(1) rotate(0deg) translateY(180px));
+  	}
+  	to {
+      opacity: 1; 
+  	  @include transform(scale(1) rotate(1080deg) translateY(0));
+  	}
+}
+
+@include keyframes(logoLoadColor) {
+ 	from {
+    	fill: $primary;
+ 	}
+  	to {
+    	fill: #fff788;
+  	}
+}
+
+
+@include keyframes(fadeInUpLogo) {
+    from {
+      opacity: 0; 
+      @include transform(translateY(20%) rotate(0deg));
+    }
+    to {
+      opacity: 1; 
+      @include transform(translateY(0) rotate(900deg));
+    }
+}
+
+
+@include keyframes(fadeInUp) {
+    from {
+      opacity: 0; 
+      @include transform(translateY(5%));
+    }
+    to {
+      opacity: 1; 
+      @include transform(translateY(0));
+    }
+}
+
+@include keyframes(fadeInLeft) {
+    from {
+      opacity: 0; 
+      @include transform(translateX(-100%));
+    }
+    to {
+      opacity: 1; 
+      @include transform(translateX(0));
+    }
+}
+
+

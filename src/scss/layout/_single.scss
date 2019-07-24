@@ -1,0 +1,118 @@
+/* Single 
+================ */
+
+.single-project {
+	header {
+		background-color: $tertiary !important;
+	}
+
+	aside {
+		position: fixed;
+		top: 20%;
+		left: 0;
+		width: 25vw;
+		height: 80%;
+		z-index: 99;
+
+		border-left: $gutter solid transparent;
+		border-right: $gutter solid transparent;
+
+		padding: $padding * 2;
+	}
+
+	figure {
+		float: left;
+		margin: 0;
+		padding: 0;
+		border: 9px solid transparent;
+
+		img {
+			height: auto;
+		}
+	}	
+
+	main h1 {
+		position: relative;
+		color: $white;
+		font-size: 1.5em;
+		line-height: 1.5em;
+		font-weight: 300;
+
+		&:after {
+			position: relative;
+			top: 10px;
+			left: 50%;
+			margin-left: -10%;
+			display: block;
+			width: 20%;
+			height: 1px;
+			content: " ";
+			border-bottom: 1px solid $white;
+		}
+	}
+
+	p {
+		font-family: 'Cantarell';
+		//font-family: Arial;
+		font-size: $base-size;
+		color: $white;
+		padding: $padding 0;
+		letter-spacing: $spacing;
+		line-height: $base-line-height * 1.25;
+		text-align: left;
+	}
+
+	.pagination {
+		position: absolute;
+		left: 0;
+		bottom: 100px;
+		width: 100%;
+		padding: $padding*2;
+
+		a, span {
+			color: $white;
+			text-align: center;
+		}
+
+		span.link {
+			float: left;
+			width: 20%;
+			display: block;
+			text-align: center;
+		}
+
+		span.link a {
+			text-decoration: none;
+		}
+
+		span.role {
+			float: left;
+			display: block;
+			font-size: .8em;
+			letter-spacing: 0.3em;
+			text-transform: uppercase;
+			width: 60%;
+		}
+
+	}
+
+}
+
+
+// Masonry is a quick hack for using old project imagery. Hope to depreacte this soon.
+.masonry {
+	width: 100%;
+
+	.gallery-item {
+		width: 50%;
+	}
+}
+
+
+// .masonry {
+// 	width: 100%;
+
+// 	.gallery-item {
+// 		width: 100%;
+// 	}
+// }

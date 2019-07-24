@@ -1,0 +1,45 @@
+div.about {
+	display: table;
+	vertical-align: middle;
+	position: fixed;
+	height: 100vh;
+	width: 75vw;
+	top: 0;
+	right: -100%;
+	z-index: 999;
+	text-align: left;
+	padding: $gutter * 4;
+
+	border: $gutter solid $white;
+	border-left: 0;
+	//background-color: darken(adjust-hue($primary-design, 100%), 5%);
+	//background-color: mix($secondary-design, $primary-design, 30%);
+	background-color: darken($primary-design, 15%);
+
+	&.visible {
+		right: 0;
+	}
+
+	.inner-wrapper {
+		display: table-cell;
+		vertical-align: middle;
+
+		h1 {
+			text-align: center;
+			font-weight: 400;
+			font-size: 2em;
+			color: $white,
+		}
+
+		p {
+			color: $white;
+			font-size: $base-size * 1.4;
+			line-height: $base-line-height * 2.2;
+
+			a {
+				color: lighten($primary-design, 25%);
+			}
+		}
+	}
+
+}

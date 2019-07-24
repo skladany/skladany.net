@@ -1,0 +1,113 @@
+/* Projects 
+================ */
+
+main {
+	@include clearfix;
+	padding-top: 0;
+	//margin-top: -33vw;
+	margin-top: 0;
+	margin-left: -9px;
+	padding-left: 25%;
+	border: 9px solid transparent;
+	border-left: 0 !important;
+}
+
+article {
+	@include clearfix;
+	overflow: hidden;
+	display: none;
+	float: left;
+	border: 9px solid $white;
+
+	&.visible {
+		display: block;
+	}
+
+	a {
+		width: 100%;
+		height: auto;
+		
+		figure {
+			position: relative;
+			margin: 0;
+			padding: 0;
+
+			img {
+				width: 100%;
+				height: auto;
+
+				&:hover {
+					opacity: .8;
+					@include transform(scale(1.01));
+				}
+			}
+			
+			figcaption {
+				bottom: -100px;
+				position: absolute;
+				background-color: $tertiary;
+				width: 100%;
+
+				h2, h3 {
+					// font-family: 'Catamaran', sans-serif;
+					font-size: $base-size * 1.25;
+					font-weight: 500;
+					letter-spacing: $spacing*3;
+					text-transform: uppercase;
+					// position: absolute;
+					// bottom: 0;
+					// right: -6px;
+					padding: $padding*.5 $padding*.75 $padding*.3 $padding*.75;
+					color: $white;
+					
+				}
+
+				
+			}
+
+			figcaption h3 {
+				font-size: $base-size * .85;
+			}
+		}
+
+		&:hover figcaption {
+			bottom: 0;
+		}
+	}
+
+	// a:hover {
+	// 	opacity: .8;
+	// 	@include transform(scale(1.5));
+	// }
+
+}
+
+.gallery {
+	float: left;
+	@include clearfix;
+
+	&.full, &.half, &.third {
+		width: 100%;
+	}
+
+	img {
+		height: auto;
+	}
+
+	&.half figure {
+		width: 50%;
+	}
+
+	&.third figure {
+		width: 33.33%;
+	}
+
+	.gallery-caption {
+		display: block;
+		color: white;
+		background-color: red;
+		padding: 9px;
+	}
+
+}
+

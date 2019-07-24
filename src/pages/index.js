@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -8,13 +7,48 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1>
+      <a href="mailto:steve@skladany.net" class="text-link me">
+        steve@skladany.net
+      </a>
+    </h1>
+    <hr />
+    <h2>
+      Front End Engineer and Designer currently working as Lead Developer at
+      <br />
+      <a href="http://thepointsguy.com" target="_blank" class="text-link">
+        The Points Guy
+      </a>
+      <ul class="social-links">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/steveskladany/"
+            target="_blank"
+            class="icon-linkedin"
+          >
+            <i>LinkedIn</i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/steveskladany"
+            target="_blank"
+            class="icon-twitter"
+          >
+            <i>Twitter</i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/skladany"
+            target="_blank"
+            class="icon-github"
+          >
+            <i>Github</i>
+          </a>
+        </li>
+      </ul>
+    </h2>
   </Layout>
 )
 

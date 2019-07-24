@@ -1,0 +1,39 @@
+/* Theme Name: Skladany Design
+ * Author: Steve Skladany, 
+ * Author URI: www.skladany.net
+ * Version: 8.6
+ * Date: 2017.02.28
+ */
+
+// Normalize + Boilerplate
+@import "vendor/normalize";
+@import "vendor/boilerplate";
+
+// Bourbon + Neat & Media Query Settings
+@import "vendor/bourbon/bourbon";
+// Media Query Defaults
+@import "base/grid-settings";
+@import "vendor/neat/neat";
+
+// Colors & Type
+@import "base/defaults";
+@import "base/fonts";
+
+@import "layout/home";
+
+// Default Styles
+//@import "base/base";
+//@import "legacy.scss";
+
+// @import "layout/header";
+// @import "layout/nav";
+
+// @import "layout/single";
+// @import "layout/about";
+// @import "layout/projects";
+
+@import "layout/animations.scss";
+
+* {
+  border: 1px solid red;
+}

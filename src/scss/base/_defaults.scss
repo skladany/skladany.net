@@ -1,0 +1,98 @@
+/* Variables & Defaults */
+
+
+/* Colors 
+================ */
+
+$primary : #fff;
+$secondary: #15cdf9;
+//$secondary: #159292;
+$complimentary: #3bbbf2;
+$tertiary: #08b5d8;
+
+$text: #666;
+$white: #fff;
+
+$slab: 'Roboto Slab', serif;
+
+// FBE652
+// F89743
+// F6A341
+
+
+/* Alternates Palettes 
+========================= */
+
+$primary-design: #cc19ab;
+$secondary-design: #fff;
+$tertiary-design: pink;
+
+$primary-dev: red;
+$secondary-dev: black;
+
+$link-color: #f5f590;
+
+
+
+/* Sizes 
+================ */
+
+$padding: 18px;
+$gutter: $padding;
+
+$base-size: 16px;
+$base-line-height: 32px;
+$spacing: .03em;
+
+$logo-size: 100px;
+
+
+/* Layout 
+================ */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	text-align: center;
+	font-family: $slab;
+	font-size: $base-size*1.25;
+	line-height: $base-line-height*1.25;
+	letter-spacing: $spacing;	
+}
+
+main, header {
+	margin: auto;
+}
+
+header {
+	padding: $padding;
+}
+
+h1 {
+	color: #fff;
+	font-weight: 400;
+	font-size: $base-size*1.7;
+	line-height: $base-line-height*1.7;
+	margin: 0 0 $padding 0;
+	text-align: center;
+}
+
+h2 {
+	color: #fff;
+	font-weight: 100;
+	font-size: $base-size*1.25;
+	line-height: $base-line-height*1.1;
+}
+
+img {
+	width: 100%;
+}
+
+a:hover {
+	cursor: hand;
+}
