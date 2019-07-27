@@ -78,9 +78,9 @@ header {
   .logo {
     @include animation(fadeInUpLogo 1s 1 ease-in-out);
     display: block;
-    //padding-top: $padding*5;
-    // width: $logo-size;
-    // height: $logo-size;
+    padding-top: $padding * 5;
+    width: $logo-size;
+    height: $logo-size;
     font-size: 1.2em;
     line-height: 70px;
     text-align: center;
@@ -88,12 +88,13 @@ header {
     text-align: -9999px;
 
     svg {
+      border: 1px solid green;
       width: $logo-size;
       height: $logo-size;
 
       @include media($small) {
-        // width: $logo-size*1.25;
-        // height: $logo-size*1.25;
+        width: $logo-size * 1.25;
+        height: $logo-size * 1.25;
       }
 
       @include media($medium) {
@@ -103,13 +104,13 @@ header {
 
       path {
         fill: $primary;
-        // fill: #fff;
-        //@include animation(logoLoadColor 1.5s 1 ease-in-out);
+        fill: #fff;
+        @include animation(logoLoadColor 1.5s 1 ease-in-out);
       }
 
       circle {
         stroke: $primary;
-        // stroke: #fff;
+        stroke: #fff;
       }
     }
   }
@@ -389,6 +390,6 @@ ul.social-links {
 // 	bottom: $padding * 3;
 // }
 
-// body.cover .logo svg {
-// 	@include animation(fadeInUp 1.5s 1 ease-in-out, logoLoad 1.5s 1 ease-in-out);
-// }
+body.cover .logo svg {
+  @include animation(fadeInUp 1.5s 1 ease-in-out, logoLoad 1.5s 1 ease-in-out);
+}
