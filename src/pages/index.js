@@ -13,10 +13,15 @@ const IndexPage = () => (
     </h1>
     <hr />
     <h2>
-      Front End Engineer and Designer currently working as Lead Developer at
+      Front End Engineer and Designer
+      <br /> currently working as a Developer at
       <br />
       <a href="http://thepointsguy.com" target="_blank" class="text-link">
         The Points Guy
+      </a>
+      /
+      <a href="http://www.redventures.com" target="_blank" class="text-link">
+        Red Ventures
       </a>
     </h2>
     <hr />
