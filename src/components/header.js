@@ -3,13 +3,27 @@ import PropTypes from "prop-types"
 import React from "react"
 import Logo from "../images/logo.svg"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, props }) => (
   <header>
     <span className="logo">
       <Link to="/">
         <Logo />
       </Link>
     </span>
+    {JSON.stringify(props)}
+    <nav>
+      <ul>
+        <li>
+          <a>About</a>
+        </li>
+        <li>
+          <a>Thoughts</a>
+        </li>
+        <li>
+          <a>Learning</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 )
 

@@ -11,6 +11,7 @@ const IndexPage = () => (
         steve@skladany.net
       </a>
     </h1>
+    {JSON.stringify(this)}
     <hr />
     <h2>
       Front End Engineer and Designer
