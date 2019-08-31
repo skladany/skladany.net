@@ -1,5 +1,9 @@
 /* Variables & Defaults */
 
+:root {
+  font-size: 16px;
+}
+
 /* Colors 
 ================ */
 
@@ -18,11 +22,11 @@ $link-color: #f5f590;
 /* Sizes 
 ================ */
 
-$padding: 18px;
+$padding: 1.125rem;
 $gutter: $padding;
 
-$base-size: 16px;
-$base-line-height: 32px;
-$spacing: 0.03em;
+$base-size: 1rem;
+$base-line-height: 2rem;
+$spacing: 0.03rem;
 
-$logo-size: 100px;
+$logo-size: 6.25rem;
