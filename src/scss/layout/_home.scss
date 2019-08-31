@@ -1,27 +1,6 @@
 /* Header 
 ================ */
 
-body,
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
-  border: $gutter solid #fff;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  background-color: $secondary;
-}
-
 header {
   .logo {
     @include animation(fadeInUpLogo 1s 1 ease-in-out);
