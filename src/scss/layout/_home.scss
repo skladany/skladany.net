@@ -1,27 +1,6 @@
 /* Header 
 ================ */
 
-body,
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
-  border: $gutter solid #fff;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  background-color: $secondary;
-}
-
 header {
   .logo {
     @include animation(fadeInUpLogo 1s 1 ease-in-out);
@@ -33,13 +12,8 @@ header {
     text-align: -9999px;
 
     svg {
-      width: $logo-size;
-      height: $logo-size;
-
-      @include media($medium) {
-        width: $logo-size * 1.25;
-        height: $logo-size * 1.25;
-      }
+      width: $logo-size * 1.25;
+      height: $logo-size * 1.25;
 
       path {
         fill: $primary;
@@ -103,7 +77,7 @@ main {
   a.text-link {
     font-size: 0.85em;
     font-weight: 400;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     top: -2px;
     white-space: nowrap;
@@ -151,13 +125,14 @@ ul.social-links {
   }
 
   a {
+    font-size: 1.5rem;
     color: lighten($tertiary, 35);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     border: 1px solid $tertiary;
     padding: 6px;
-    margin: 6px;
-    border-radius: 20px;
+    margin: 12px;
+    border-radius: 2rem;
 
     &:hover {
       color: $white;
