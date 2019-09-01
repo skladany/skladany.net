@@ -30,7 +30,7 @@ body {
   width: 100%;
   min-height: 100%;
   background-color: $secondary;
-  border: $gutter * 0.5 solid #fff;
+  border: $gutter * 0.75 solid #fff;
 
   @include media($tiny) {
     border: $gutter solid #fff;

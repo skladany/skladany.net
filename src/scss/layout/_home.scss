@@ -12,13 +12,8 @@ header {
     text-align: -9999px;
 
     svg {
-      width: $logo-size;
-      height: $logo-size;
-
-      @include media($medium) {
-        width: $logo-size * 1.25;
-        height: $logo-size * 1.25;
-      }
+      width: $logo-size * 1.25;
+      height: $logo-size * 1.25;
 
       path {
         fill: $primary;
@@ -82,7 +77,7 @@ main {
   a.text-link {
     font-size: 0.85em;
     font-weight: 400;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     top: -2px;
     white-space: nowrap;
