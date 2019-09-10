@@ -10,39 +10,83 @@ html {
   box-sizing: inherit;
 }
 
-body,
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
-  text-align: center;
   font-family: $slab;
   font-size: $base-size;
   line-height: $base-line-height;
   letter-spacing: $spacing;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  min-height: 100%;
-  background-color: $secondary;
-  border: $gutter * 0.75 solid #fff;
 
-  @include media($tiny) {
-    border: $gutter solid #fff;
+  width: 100%;
+  background-color: $secondary;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // Left & Right Border
+  &:before,
+  &:after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: " ";
+    height: 100%;
+    display: block;
+    border: $gutter/4 solid #fff;
+
+    // Bolder border for larger viewports
+    @include media($tiny) {
+      border-width: $gutter/2;
+    }
+  }
+
+  &:after {
+    left: auto;
+    right: 0;
+  }
+
+  /* e.g, only center the content vertically
+  if the screen is tall enough to accomodate. 
+  Otherwise let it just start at the top and
+  use scrollbars! */
+  @media screen and (min-height: 575px) {
+    height: 100vh;
   }
 }
 
 div#___gatsby {
-  width: 100%;
+  //flex: none;
   padding: $padding;
 
-  @include media($large) {
-    padding: $padding * 2.5;
+  overflow: hidden;
+
+  padding: $gutter * 1.5;
+
+  @include media($tiny) {
+    padding: $gutter * 2.5;
+  }
+
+  // Top & Bottom Border
+  &:before,
+  &:after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    display: block;
+    border: $gutter/4 solid #fff;
+
+    // Bolder border for larger viewports
+    @include media($tiny) {
+      border-width: $gutter/2;
+    }
+  }
+
+  &:after {
+    top: auto;
+    bottom: 0;
   }
 }
 
