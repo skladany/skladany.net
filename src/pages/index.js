@@ -13,7 +13,7 @@ const IndexPage = () => (
     </h1>
     <hr />
     <h2>
-      Front End Engineer and Designer currently working as a
+      Full Stack Developer and Designer currently working as a
       Senior&nbsp;Engineer at
       <br />
       <a href="http://thepointsguy.com" target="_blank" class="text-link">
