@@ -12,8 +12,13 @@ header {
     text-align: -9999px;
 
     svg {
-      width: $logo-size * 1.25;
-      height: $logo-size * 1.25;
+      width: $logo-size;
+      height: $logo-size;
+
+      @include media($tiny) {
+        width: $logo-size * 1.25;
+        height: $logo-size * 1.25;
+      }
 
       path {
         fill: $primary;
@@ -98,21 +103,25 @@ hr {
   position: relative;
   width: 61.8%;
   height: 1px;
-  margin: $padding * 1.25 auto;
+  margin: $padding * 0.5 auto;
   border-top: 1px solid $tertiary;
 
-  &:after {
-    font-weight: 100;
-    font-size: 0.65em;
-    content: "§";
-    color: darken($tertiary, 3%);
-    position: absolute;
-    top: -$padding * 1.25;
-    left: 50%;
-    width: 20px;
-    background-color: $secondary;
-    transform: translateX(-10px);
+  @include media($tiny) {
+    margin: $padding * 1.25 auto;
   }
+
+  // &:after {
+  //   font-weight: 100;
+  //   font-size: 0.65em;
+  //   content: "§";
+  //   color: darken($tertiary, 3%);
+  //   position: absolute;
+  //   top: -$padding * 1.25;
+  //   left: 50%;
+  //   width: 20px;
+  //   background-color: $secondary;
+  //   transform: translateX(-10px);
+  // }
 }
 
 ul.social-links {
