@@ -50,7 +50,7 @@ body {
   if the screen is tall enough to accomodate. 
   Otherwise let it just start at the top and
   use scrollbars! */
-  @media screen and (min-height: 640px) {
+  @media screen and (min-height: 575px) {
     height: 100vh;
   }
 }
