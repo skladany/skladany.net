@@ -16,12 +16,8 @@ const IndexPage = () => (
       Full Stack Developer and Designer currently working as a
       Senior&nbsp;Engineer at
       <br />
-      <a href="http://thepointsguy.com" target="_blank" class="text-link">
-        The Points Guy
-      </a>
-      /
-      <a href="http://www.redventures.com" target="_blank" class="text-link">
-        Red Ventures
+      <a href="http://minervaknows.com" target="_blank" class="text-link">
+        Minerva
       </a>
     </h2>
     <hr />
