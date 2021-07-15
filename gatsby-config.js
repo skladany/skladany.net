@@ -37,14 +37,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Roboto Slab`,
-            variants: [`100`, `300`, `400`, `700`],
-          },
-        ],
+        fonts: [`Roboto Slab\:100,300,400,700`],
       },
     },
   ],
