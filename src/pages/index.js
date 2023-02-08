@@ -13,11 +13,11 @@ const IndexPage = () => (
     </h1>
     <hr />
     <h2>
-      Full Stack Developer and Designer
-      <br /> currently working as a Senior&nbsp;Engineer at
+      Full Stack Developer and Designer currently
+      <br /> working as a Staff Frontend&nbsp;Engineer at
       <br />
-      <a href="http://minervaknows.com" target="_blank" class="text-link">
-        Minerva
+      <a href="https://odeko.com/" target="_blank" class="text-link">
+        Odeko
       </a>
     </h2>
     <hr />
