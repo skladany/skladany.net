@@ -14,10 +14,10 @@ const IndexPage = () => (
     <hr />
     <h2>
       Full Stack Developer and Designer currently
-      <br /> working as a Staff Frontend&nbsp;Engineer at
+      <br /> working as a Frontend&nbsp;Engineer at
       <br />
-      <a href="https://odeko.com/" target="_blank" class="text-link">
-        Odeko
+      <a href="https://aws.amazon.com/" target="_blank" class="text-link">
+        Amazon Web Services (AWS)
       </a>
     </h2>
     <hr />
@@ -29,15 +29,6 @@ const IndexPage = () => (
           class="icon-linkedin"
         >
           <i>LinkedIn</i>
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/steveskladany"
-          target="_blank"
-          class="icon-twitter"
-        >
-          <i>Twitter</i>
         </a>
       </li>
       <li>
